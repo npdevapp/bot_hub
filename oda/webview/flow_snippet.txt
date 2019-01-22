@@ -1,0 +1,17 @@
+#Add these 2 variables under variables section:
+
+    srcvar: "string"
+    retvar: "string"
+
+#Webview State
+
+  playlist:
+    component: "System.Webview"
+    properties:
+      sourceVariableList: "srcvar"
+      variable: "retvar"
+      prompt: "Tap to open playlist"
+      webAppUrl: "http://webserv.nplocal.pagekite.me/" #Use the node redirector app url -- the testserver app
+      linkLabel: "my playlist"
+    transitions:
+      return: "done"
